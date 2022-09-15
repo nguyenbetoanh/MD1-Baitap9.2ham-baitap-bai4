@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
+</h1>
+<body>
+<script>
+  function min(x,y,z){
+    let tong =Math.min(x,y,z)
+    document.write("giá trị nhỏ nhất là :"+tong)
+    return tong
+  }
+  input()
+  function input(){
+    x=+prompt('nhap x')
+    y=+prompt('nhap y')
+    z=+prompt('nhapz')
+    min(x,y,z)
+  }
+</script>
+</body>
+</html>

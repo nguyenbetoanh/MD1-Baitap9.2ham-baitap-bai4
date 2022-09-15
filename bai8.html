@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.</h1>
+h1>đảo ngược các phần tử</h1>
+<h2 id="ht"></h2>
+<h1 id="daonguoc"> </h1>
+<input type="text" id="ptMoi">
+<button onclick="themPT()">thêm phần tử</button>
+<button onclick="daoNguoc()">daoNguoc</button>
+<script>
+    let array =[]
+    function themPT(){
+        let themPT =document.getElementById('ptMoi').value;
+        array.push(themPT)
+        document.getElementById('ht').innerHTML="các phần tử đã đã thêm vào là : "+array
+    }
+    function daoNguoc(){
+        array.reverse()
+        document.getElementById('daonguoc').innerHTML="các phần tử đã đã đảo ngược là : "+array
+    }
+
+</script>
+</body>
+</html>

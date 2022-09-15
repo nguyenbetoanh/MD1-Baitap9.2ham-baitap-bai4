@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về-->
+<!--true, ngược lại trả về false.-->
+<body>
+<h1>kiểm tra xem ký tự nhập vào có phải là ký tự số không</h1>
+<script>
+  function kiemTra(number){
+    if (Number.isInteger(number)){
+      document.write(number+"là 1 số")
+    }else{
+      document.write(  number+" ko là 1 số")
+  }
+  }
+  input()
+  function input(){
+    number =+prompt('nhap kí tự cần kiểm tra');
+    kiemTra(number)
+  }
+</script>
+</body>
+</html>

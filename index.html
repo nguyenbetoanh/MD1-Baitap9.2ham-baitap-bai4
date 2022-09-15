@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 1: Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.-->
+<h1 id="ht" ></h1>
+<input type="text" value="" id="dulieu">
+<button onclick="bamVao()">kt</button>
+<script>
+  function tinhBP(x){
+      console.log("tinhp=======",x)
+    let tong = Math.pow(x,2)
+      document.getElementById('ht').innerHTML=tong
+      return tong ;
+  }
+  function bamVao(){
+      let x = +document.getElementById('dulieu').value;
+      console.log("click=======",x)
+      tinhBP(x);
+  }click()
+</script>
+</body>
+</html>

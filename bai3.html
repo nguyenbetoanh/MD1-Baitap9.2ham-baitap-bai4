@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng-->
+<!--được.-->
+<body>
+<h1>Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng
+  được.</h1>
+<h1 id="ht" ></h1>
+<script>
+  function tinhToan(n) {
+      let tong =1
+      for (let i = 1; i <= n; i++) {
+          tong = (tong * i)
+      }
+      document.getElementById('ht').innerText = 'Giai thua cua ' + n + " la : " + tong
+  }
+  click()
+  function click() {
+      n = prompt('nhap so bat ki')
+      tinhToan(n);
+  }
+</script>
+
+</body>
+</html>
+</body>
+</html>
